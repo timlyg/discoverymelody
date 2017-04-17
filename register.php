@@ -1,8 +1,8 @@
 <?php session_start(); ?>
 
 <?php
-  include 'config.php';
   if($_SERVER["REQUEST_METHOD"] == "POST") {
+      include 'config.php';
      // username and password sent from form
      $myfirstname = $_POST['firstname'];
      $mylastname = $_POST['lastname'];
