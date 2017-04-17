@@ -19,8 +19,8 @@
 </style>
 
 <div id="container">
-  <div id="left"></div>
-  <div id="center"></div>
+  <div id="left">Languages</div>
+  <div id="center">Center stuff</div>
   <div id="right">
     <a href="login.php">Login</a>
     <a href="register.php">Register</a>
