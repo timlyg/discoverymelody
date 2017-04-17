@@ -8,13 +8,10 @@
      $mylastname = $_POST['lastname'];
      $myemail = $_POST['email'];
      $myhash = crypt($_POST['password'],'melodydiscover');
-     $sql = "INSERT INTO Students (LastName, FirstName, Email, Hash) VALUES (?,?,?,?)";
-     echo "seriouslySQL?";
-     $params = array($myfirstname, $mylastname, $myemail, $myhash);
+     $sql = "INSERT INTO Students (LastName, FirstName, Email, Hash, SignUpDate) VALUES (?,?,?,?,?)";
+     $params = array($myfirstname, $mylastname, $myemail, $myhash, date("Y-m-d H:i:s"));
      $result = sqlsrv_query($conn,$sql,$params);
-     echo "ready<br>";
      if( $result === false ) {
-       echo "no!";
        die( print_r( sqlsrv_errors(), true));
      }
      else echo "User Registered";
