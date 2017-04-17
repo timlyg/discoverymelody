@@ -8,8 +8,8 @@
      $mylastname = $_POST['lastname'];
      $myemail = $_POST['email'];
      $myhash = crypt($_POST['password'],'melodydiscover');
-echo "seriouslythogh?";
      $sql = "INSERT INTO Students (LastName, FirstName, Email, Hash) VALUES (?,?,?,?)";
+     echo "seriouslySQL?";
      $params = $array($myfirstname, $mylastname, $myemail, $myhash);
      $result = sqlsrv_query($conn,$sql,$params);
      echo "ready<br>";
