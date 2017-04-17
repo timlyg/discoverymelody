@@ -10,7 +10,7 @@
      $myhash = crypt($_POST['password'],'melodydiscover');
 
      $sql = "INSERT INTO Students (LastName, FirstName, Email, Hash) VALUES ($myfirstname, $mylastname, $myemail, $myhash)";
-     $result = mysqli_query($conn,$sql);
+     $result = sqlsrv_query($conn,$sql);
      if( $result === false ) {
        die( print_r( sqlsrv_errors(), true));
      }
