@@ -13,7 +13,12 @@
 
     <h1>Welcome</h1>
 
-    <?php echo "Crypt status: ".crypt('genesis','melodydiscover'); ?>
+    <?php
+      echo "Crypt status md: ".crypt('genesis','melodydiscover');
+      echo "Crypt status malatang: ".crypt('malatang','melodydiscover');
+      echo "Crypt status md: ".crypt('genesis','melodydiscover');
+      echo "Crypt status dm: ".crypt('genesis','discovermelody');
+    ?>
 
 
   </body>
