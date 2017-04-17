@@ -10,7 +10,7 @@
      $myhash = crypt($_POST['password'],'melodydiscover');
      $sql = "INSERT INTO Students (LastName, FirstName, Email, Hash) VALUES (?,?,?,?)";
      echo "seriouslySQL?";
-     $params = $array($myfirstname, $mylastname, $myemail, $myhash);
+     $params = array($myfirstname, $mylastname, $myemail, $myhash);
      $result = sqlsrv_query($conn,$sql,$params);
      echo "ready<br>";
      if( $result === false ) {
