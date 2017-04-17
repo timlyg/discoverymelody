@@ -11,6 +11,10 @@
 
   <body>
 
-    INDEX PAGE
+    <h1>Welcome</h1>
+
+    <?php echo "Crypt status: ".crypt('genesis','melodydiscover'); ?>
+
+
   </body>
 </html>
