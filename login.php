@@ -6,12 +6,16 @@
     <title>Discover Melody</title>
     <?php
       include 'header.php';
+      include 'config.php';
     ?>
   </head>
 
   <body>
 
-    <h1>Welcome</h1>
+    <h1>Login</h1>
+    <form name=login>
+
+    </form>
 
 
 

@@ -11,7 +11,11 @@
 
   <body>
 
-    <h1>Welcome</h1>
+    <h1>Registration</h1>
+    <form name=register>
+
+
+    </form>
 
 
 
