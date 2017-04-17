@@ -3,13 +3,13 @@
 <html>
   <head>
     <title>Discover Melody</title>
-  </head>
-
-  <body>
     <?php
       include 'header.php'
     ?>
+  </head>
 
+  <body>
 
+    INDEX PAGE
   </body>
 </html>

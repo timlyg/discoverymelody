@@ -5,4 +5,17 @@
   // destroy the session
   session_destroy();
 ?>
-You are logged out.
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Discover Melody</title>
+    <?php
+      include 'header.php'
+    ?>
+  </head>
+
+  <body>
+
+    You are logged out.
+  </body>
+</html>
