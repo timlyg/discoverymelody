@@ -3,7 +3,6 @@
 <?php
   if($_SERVER["REQUEST_METHOD"] == "POST") {
       include 'config.php';
-               echo "seriously?";
      // username and password sent from form
      $myfirstname = $_POST['firstname'];
      $mylastname = $_POST['lastname'];
@@ -12,6 +11,7 @@
 
      $sql = "INSERT INTO Students (LastName, FirstName, Email, Hash) VALUES (?,?,?,?)";
      $params = $array($myfirstname, $mylastname, $myemail, $myhash);
+                    echo "seriously?";
      $result = sqlsrv_query($conn,$sql,$params);
      echo "ready<br>";
      if( $result === false ) {
