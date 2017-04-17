@@ -9,8 +9,9 @@
      $myemail = $_POST['email'];
      $myhash = crypt($_POST['password'],'melodydiscover');
 
-     $sql = "INSERT INTO Students (LastName, FirstName, Email, Hash) VALUES ($myfirstname, $mylastname, $myemail, $myhash)";
-     $result = sqlsrv_query($conn,$sql);
+     $sql = "INSERT INTO Students (LastName, FirstName, Email, Hash) VALUES (?,?,?,?)";
+     $params = $array($myfirstname, $mylastname, $myemail, $myhash);
+     $result = sqlsrv_query($conn,$sql,$params);
      if( $result === false ) {
        die( print_r( sqlsrv_errors(), true));
      }
