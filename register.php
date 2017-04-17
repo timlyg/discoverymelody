@@ -2,8 +2,8 @@
 
 <?php
   if($_SERVER["REQUEST_METHOD"] == "POST") {
-         echo "seriously?";
       include 'config.php';
+               echo "seriously?";
      // username and password sent from form
      $myfirstname = $_POST['firstname'];
      $mylastname = $_POST['lastname'];
