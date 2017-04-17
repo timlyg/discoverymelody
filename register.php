@@ -12,6 +12,7 @@
      $sql = "INSERT INTO Students (LastName, FirstName, Email, Hash) VALUES (?,?,?,?)";
      $params = $array($myfirstname, $mylastname, $myemail, $myhash);
      $result = sqlsrv_query($conn,$sql,$params);
+     echo "ready<br>";
      if( $result === false ) {
        echo "no!";
        die( print_r( sqlsrv_errors(), true));
