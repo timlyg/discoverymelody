@@ -16,6 +16,6 @@
 
   <body>
 
-    You are logged out.
+    You are logged out. Back to <a href="/">home</a>
   </body>
 </html>
