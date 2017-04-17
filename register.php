@@ -13,6 +13,7 @@
      $params = $array($myfirstname, $mylastname, $myemail, $myhash);
      $result = sqlsrv_query($conn,$sql,$params);
      if( $result === false ) {
+       echo "no!";
        die( print_r( sqlsrv_errors(), true));
      }
      else echo "User Registered";
